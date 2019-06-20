@@ -7,7 +7,7 @@ const math = create(all, config);
 
 const Display = props => {
   return (
-    <div>
+    <div className="display">
       <h1>{props.number}</h1>
     </div>
   );
@@ -73,6 +73,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <h1>Ashley's React Calculator</h1>
         <Display number={this.state.display} />
         <Board do={this.do} />
       </div>
